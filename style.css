@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+
 body, html {
     height: 100%;
-    font-family: 'Quicksand', sans-serif;
-}
+}   
 
 .bg {
 /* The image used */
-background-image: url("lynes.jpg");
+background-image: url("active-adult.jpg");
 background-color: #a9a9a9;
 
 /* Full height */

@@ -23,7 +23,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
 
     <title>Home</title>
-
 </head>
 
 <body>
@@ -73,7 +72,7 @@
                 </li>
 
                 <li>
-                    <button type= "submit" class="btn btn-md align-middle btn-outline-dark" style="width:110px; height:40px; color:#ffffff;" 
+                    <button type= "submit" class="btn btn-md align-middle btn-white" style="width:110px; height:40px; color:#000000;" 
                     data-toggle="modal" data-target="#modalSignUp">Sign Up</button>
                 </li>
             </ul>
@@ -191,32 +190,32 @@
         <div class="modal-body mx-3">
             <div class="md-form mb-5">
             <i class="fas fa-user prefix grey-text"></i>
-            <input type="text" id="orangeForm-name" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="orangeForm-name">First name</label>
+            <input type="text" id="fname" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="fname">First name</label>
             </div>
 
             <div class="md-form mb-5">
             <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="text" id="orangeForm-email" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="orangeForm-email">Last name</label>
+            <input type="text" id="lname" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="lname">Last name</label>
             </div>
 
             <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
-            <input type="text" id="orangeForm-pass" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="orangeForm-pass">Student ID</label>
+            <input type="text" id="studid" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="studid">Student ID</label>
             </div>
 
             <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
-            <input type="email" id="orangeForm-pass" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="orangeForm-pass">Email</label>
+            <input type="email" id="studemail" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="studemail">Email</label>
             </div>
 
             <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
-            <input type="password" id="orangeForm-pass" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="orangeForm-pass">Password</label>
+            <input type="password" id="studpassword" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="studpassword">Password</label>
             </div>
 
         </div>
@@ -240,7 +239,7 @@
         
         <!--Grid column-->
         <div class="col-md-12">
-        <h2>Upcoming Events</h2>
+        <h3>Upcoming Events</h3>
         </div><br>
         <!--Grid column-->
 
@@ -294,7 +293,169 @@
 
         <!--Grid column-->
         <div class="col-md-12" style="padding-top:40px">
-        <h2>ASC Events</h2>
+        <h3>ASC Events</h3>
+        </div><br>
+        <!--Grid column-->
+
+        <!-- Card 1-->
+        <div class="col-md-4">
+            <span class="container-fluid profiles">
+                <div class="card pro3" style="width:100%">
+                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+
+            <!-- Card content -->
+                    <div class="card-body">
+                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
+                    </div>
+                </div>
+            </span> 
+        </div><br><br>
+
+        <!-- Card 2-->
+        <div class="col-md-4">
+            <span class="container-fluid profiles">
+                <div class="card pro3" style="width:100%">
+                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+
+            <!-- Card content -->
+                    <div class="card-body">
+                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
+                    </div>
+                </div>
+            </span> 
+        </div><br><br>
+
+        <!-- Card 3-->
+        <div class="col-md-4">
+            <span class="container-fluid profiles">
+                <div class="card pro3" style="width:100%">
+                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+
+            <!-- Card content -->
+                    <div class="card-body">
+                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
+                    </div>
+                </div>
+            </span> 
+        </div><br><br>
+
+        <!--Grid column-->
+        <div class="col-md-12" style="padding-top:40px">
+        <h3>Information Sessions</h3>
+        </div><br>
+        <!--Grid column-->
+
+        <!-- Card 1-->
+        <div class="col-md-4">
+            <span class="container-fluid profiles">
+                <div class="card pro3" style="width:100%">
+                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+
+            <!-- Card content -->
+                    <div class="card-body">
+                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
+                    </div>
+                </div>
+            </span> 
+        </div><br><br>
+
+        <!-- Card 2-->
+        <div class="col-md-4">
+            <span class="container-fluid profiles">
+                <div class="card pro3" style="width:100%">
+                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+
+            <!-- Card content -->
+                    <div class="card-body">
+                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
+                    </div>
+                </div>
+            </span> 
+        </div><br><br>
+
+        <!-- Card 3-->
+        <div class="col-md-4">
+            <span class="container-fluid profiles">
+                <div class="card pro3" style="width:100%">
+                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+
+            <!-- Card content -->
+                    <div class="card-body">
+                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
+                    </div>
+                </div>
+            </span> 
+        </div><br><br>
+
+        <!--Grid column-->
+        <div class="col-md-12" style="padding-top:40px">
+        <h3>Student Businesses</h3>
+        </div><br>
+        <!--Grid column-->
+
+        <!-- Card 1-->
+        <div class="col-md-4">
+            <span class="container-fluid profiles">
+                <div class="card pro3" style="width:100%">
+                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+
+            <!-- Card content -->
+                    <div class="card-body">
+                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
+                    </div>
+                </div>
+            </span> 
+        </div><br><br>
+
+        <!-- Card 2-->
+        <div class="col-md-4">
+            <span class="container-fluid profiles">
+                <div class="card pro3" style="width:100%">
+                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+
+            <!-- Card content -->
+                    <div class="card-body">
+                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
+                    </div>
+                </div>
+            </span> 
+        </div><br><br>
+
+        <!-- Card 3-->
+        <div class="col-md-4">
+            <span class="container-fluid profiles">
+                <div class="card pro3" style="width:100%">
+                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+
+            <!-- Card content -->
+                    <div class="card-body">
+                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
+                    </div>
+                </div>
+            </span> 
+        </div><br><br>
+
+        <!--Grid column-->
+        <div class="col-md-12" style="padding-top:40px">
+        <h3>Student Clubs</h3>
         </div><br>
         <!--Grid column-->
 
