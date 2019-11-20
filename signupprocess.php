@@ -1,16 +1,5 @@
 <?php
 
- //Getting form data
- if (isset($_POST['signup_page'])){
-
-    
-    $firstName = $_POST['fname'];
-    $lastName = $_POST['lname'];
-    $index = $_POST['index'];
-    $email = $_POST['email'];
-    $password = $_POST['pword'];
-
-
 //declare variables for my database connection 
 $servername = "localhost";
 $username = "root";
@@ -36,36 +25,17 @@ function sanitizeData($input) {
     $data = htmlspecialchars($data);
 }
 
-if (isset($_POST['signup_page'])) {
-
-    // get the submitted username and password
-    $email = $_POST['email'];
-    $username = $_POST['password'];
-
-// encrypt password before storing to database
-$password = md5($password);
-
-// create sql query to insert user into the database
-$sql = "INSERT INTO user (Username,Password) VALUES('$name','$password')";
-
-//run the query and store result
-$result = mysqli_query($connection, $sql);
-
-//check if results were retrieved
-if (mysqli_num_rows($result)) {
-    // redirect user to login page using a session
-    header("Location: login.php");
-} else {
-    // redirect user to register page  using a session
-    header("Location: index.php");
-    // display error
-    echo"Registration Failed. Please try again.";
+    
+//Getting form data
+if (isset($_POST['signup_page'])){
+  
+    $firstName = sanitizeData($_POST['fname']);
+    $lastName = sanitizeData($_POST['lname']);
+    $index = sanitizeData($_POST['index']);
+    $email = sanitizeData($_POST['email']);
+    $password = sanitizeData($_POST['pword']);
 }
-
-// close database connection
-$connection->close();
-
-}
-}
+    
+//Validating and Inserting into the Database
 
 ?>

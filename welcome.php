@@ -36,8 +36,7 @@
         //     $email = $_POST['email'];
         
             //Removing illegal characters
-        if(filter_var($email, FILTER_SANITIZE_EMAIL));
-            //echo $email.'<br>';
+    
         
             if (filter_var($email, FILTER_VALIDATE_EMAIL)){
                 echo 'Great! <br>';
