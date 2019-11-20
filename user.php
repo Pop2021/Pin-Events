@@ -125,7 +125,7 @@ require('pdbclass.php');
 	 * Email, Password
 	 */
 
-	function sanitizeData($input) {
+	public function sanitizeData($input) {
 		$data = trim($input);
 		$data = stripslashes($data);
 		$data = htmlspecialchars($data);

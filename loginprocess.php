@@ -6,7 +6,8 @@ require('user.php');
 session_start();
 
 //
-
+// declaring an instance
+//$user1 = new User('Irene', 'Klein', 'test@gmail.com', '99998888', 'testry@@@');
     //declare variables for my database connection 
     $servername = "localhost";
     $username = "root";
