@@ -18,60 +18,79 @@ session_start();
 		echo "connected to the database<br>";
 	}
 
+	//Sanitizing data input
+
+	function sanitizeData($input) {
+	
+	}
+
+
 	//check which button has been clicked
 	if (isset($_POST['login'])) {
 
-        // get the submitted username and password  
+        // get the submitted email and password  
                    
             $email = $_POST['email'];
-            $username = $_POST['username'];
-    }    
+            $password = $_POST['password'];
+	} 
+	    // hash user password before looking it up in the database
+	  
 
         // create sql query to select user from database
-        $sql = "SELECT username, email FROM User";
-
+        $sql = "SELECT * FROM user WHERE email='$email' && password='$password'";
         //run the query and store result
-        $result = $connection->query($sql);
+        $result = mysqli_query($connection, $sql);
 		
 		//check if results were retrieved
-		if ((mysqli_num_rows($result)) == 0) {
-            // display error message
+		if (mysqli_num_rows($result) = 0) {
+			//display error message
             
-
 		} else {
-            // fetch result as an array
-	        
+			// fetch result as an array
+			$result = mysqli_fetch_assoc($result);
+
+			
+			// set retrieved user information in a session variable to be used across multiple pages
+
+	        // redirect user to their dashboard as they have successfully logged in
+	        header("Location: index.php");
+
 	        // display result
 	    	
 		}
 
 		// close database connection
-		$connection->close();
+		mysqli_close($connection);
 
-	//} else if (isset($_POST['signup_page'])) {
+	else if (isset($_POST['signup_page'])) {
 
 		// get the submitted username and password
 		$email = $_POST['email'];
-		$username = $_POST['username'];
+		$username = $_POST['password'];
+
+		// encrypt password before storing to database
 
 		// create sql query to insert user into the database
-		$sql = "SELECT username, email FROM User";
+		$sql = "INSERT INTO user (Username,Password) VALUES('$name','$password')";
 
 		//run the query and store result
-		$result = $connection->query($sql);
+		$result = mysqli_query($connection, $sql);
 
 		//check if results were retrieved
 		if (mysqli_num_rows($result)) {
 			// redirect user to login page using a session
-			
+			header("Location: login.php");
 		} else {
 	    	// redirect user to register page  using a session
-
+            header("Location: index.php");
 			// display error
+			echo"Registration Failed. Please try again.";
 		}
 
 		// close database connection
 		$connection->close();
+
+	}
 
 	
 ?>
