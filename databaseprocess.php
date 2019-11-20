@@ -8,7 +8,7 @@
 
 	//connection 
 	$connection = mysqli_connect($servername,$username,$password,$database);
-	
+
 	// Check connection
 	if (!$connection) {
 		die("Connection failed: " . mysqli_connect_error());
@@ -48,13 +48,17 @@
 	} else if (isset($_POST['rclicked'])) {
 
 		// get the submitted username and password
+		$email = $_POST['email'];
+		$username = $_POST['username'];
 
 		// create sql query to insert user into the database
+		$sql = "SELECT username, email FROM User";
 
 		//run the query and store result
-		
+		$result = $connection->query($sql);
+
 		//check if results were retrieved
-		if () {
+		if (mysqli_num_rows($result)) {
 	    	// redirect user to login page
 		} else {
 	    	// redirect user to register page
@@ -63,6 +67,7 @@
 		}
 
 		// close database connection
+		connection->close();
 
 	}
 ?>
