@@ -74,7 +74,7 @@
                 </li>
 
                 <li>
-                    <button type= "submit" class="btn btn-md align-middle btn-white" style="width:110px; height:40px; color:#000000;" 
+                    <button type= "submit" class="btn align-middle btn-white" style="width:110px; height:40px; color:#000000;" 
                     data-toggle="modal" data-target="#modalSignUp">Sign Up</button>
                 </li>
             </ul>
