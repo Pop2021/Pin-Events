@@ -3,6 +3,8 @@
 //Initializing the session
 session_start();
 
+//
+
     //declare variables for my database connection 
     $servername = "localhost";
     $username = "root";
@@ -19,18 +21,9 @@ session_start();
 	}else{
 		//echo "Connected to the database<br>";
 	}
-
-	//Sanitizing data input
-
-	function sanitizeData($input) {
-		$data = trim($input);
-		$data = stripslashes($data);
-		$data = htmlspecialchars($data);
-
-	}
-
-
-	//check which button has been clicked
+	
+	
+	//check which button has been clicked and then proceed to validate credentials
 	if (isset($_POST['login'])) {
 
         // get the submitted email and password  
