@@ -55,10 +55,11 @@
 			$result = mysqli_fetch_assoc($result);
 			
 			// set retrieved user information in a session variable to be used across multiple pages
-			$_SESSION["user_info"] = "result";
+			$_SESSION["user_info"] = $result;
+			$_SESSION["email"] = $result['Email'];
 
 	        // redirect user to their dashboard as they have successfully logged in
-	        header("Location: index.php");
+	        header("Location: user-index.php");
 	    	
 		}
 
