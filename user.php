@@ -10,7 +10,7 @@
     public $lastName = " ";
     public $email = " ";
     public $studentID = null;
-    public $yearGroup = null;
+    //public $yearGroup = null;
     public $password = "";
 
     
@@ -22,7 +22,7 @@
         $this->lastName = $lastName;
         $this->email = $email;
         $this->studentID = $studentID;
-        $this->yearGroup = $yearGroup;
+        //$this->yearGroup = $yearGroup;
         $this->password = $password;
         echo __CLASS__." created<br>";
 
@@ -63,9 +63,9 @@
         return $this->studentID;
     }
 
-    public function getYearGroup(){
-        return $this->yearGroup;
-    }
+    // public function getYearGroup(){
+    //     return $this->yearGroup;
+    // }
 
     public function getPassword(){
         return $this->password;
@@ -92,9 +92,9 @@
         $this->studentID = $studentID;
     }
 
-    public function setYearGroup($yearGroup){
-        $this->yearGroup = $yearGroup;
-    }
+    // public function setYearGroup($yearGroup){
+    //     $this->yearGroup = $yearGroup;
+    // }
 
     public function setPassword($password){
         $this->password = $password;
