@@ -1,7 +1,7 @@
 <?php
 //connect to DB class
 
-
+require('pdbclass.php');
 
 
 /** 
