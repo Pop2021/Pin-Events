@@ -5,20 +5,18 @@
 if (isset($_POST['signup_page'])){
 
     //echo "works";
-    
-
     $firstName = $_POST['fName'];
     $lastName = $_POST['lName'];
     $email = $_POST['email'];
     $index = $_POST['index'];
-    $yeargroup = $_POST['yGroup'];
+    //$yeargroup = $_POST['yGroup'];
     $password = $_POST['pword'];
 
     //echo " Welcome " .$firstName;
 
     //Check required fields
 
-    if(!empty($firstName) && !empty($lastName) && !empty($email) && !empty($index) && !empty($yeargroup) && !empty($password)){
+    if(!empty($firstName) && !empty($lastName) && !empty($email) && !empty($index) && !empty($password)){
         //echo "Passed";
         /**Check user inputs */
         if (filter_var($firstName, FILTER_SANITIZE_STRING)){

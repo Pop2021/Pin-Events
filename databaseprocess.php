@@ -21,7 +21,10 @@ session_start();
 	//Sanitizing data input
 
 	function sanitizeData($input) {
-	
+		$data = trim($input);
+		$data = stripslashes($data);
+		$data = htmlspecialchars($data);
+
 	}
 
 
@@ -30,10 +33,11 @@ session_start();
 
         // get the submitted email and password  
                    
-            $email = $_POST['email'];
-            $password = $_POST['password'];
+            $email = sanitizeData($_POST['email']);
+            $password = sanitizeData($_POST['password']);
 	} 
-	    // hash user password before looking it up in the database
+		// hash user password before looking it up in the database
+		$password = md5($password);
 	  
 
         // create sql query to select user from database
@@ -44,13 +48,13 @@ session_start();
 		//check if results were retrieved
 		if (mysqli_num_rows($result) = 0) {
 			//display error message
-            
+            echo "Sorry. User not found. Please try again.";
 		} else {
 			// fetch result as an array
 			$result = mysqli_fetch_assoc($result);
-
 			
 			// set retrieved user information in a session variable to be used across multiple pages
+			$_SESSION["user_info"] = "result";
 
 	        // redirect user to their dashboard as they have successfully logged in
 	        header("Location: index.php");
