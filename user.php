@@ -1,10 +1,15 @@
 <?php
+//connect to DB class
+
+
+
 
 /** 
  * User Class which creates User objects
  */
 
- class User{
+
+ class User extends pdbConnection{
 
     public $firstName = " ";
     public $lastName = " ";
@@ -101,17 +106,22 @@
     }
 
     /**
-     * User Methods: Sign Up, Log in
+     * User Methods: Sign Up
+     * when signup function is called, user details should get
+     *stored in the database
      */
+
+    
+    public function addNewUser(){
+
+        //save into database
+        $sql = "INSERT INTO User('StudentsID','Firstname', `Lastname`, `Email`,`Password`)VALUES(?,?,?,?,?)";
+        
+    }
 
     /**
-     * Sign Up Method
+     * Log In Method
      */
-
-    public function signUp(){
-        //when signup function is called, user details should get
-        //stored in the database
-    }
 
     public function logIn(){
         //when logIn is called, user details should be compared with what
