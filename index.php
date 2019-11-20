@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -180,6 +184,7 @@
     <!-- Full Page Intro -->
 
     <!--Sign up modal form-->
+    <form action = "welcome.php" method = "post">
     <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -194,43 +199,43 @@
         <div class="modal-body mx-3">
             <div class="md-form mb-5">
             <i class="fas fa-user prefix grey-text"></i>
-            <input type="text" id="fname" class="form-control validate">
+            <input type="text" id="fname" name="fname" class="form-control validate">
             <label data-error="wrong" data-success="right" for="fname">First name</label>
             </div>
 
             <div class="md-form mb-5">
             <i class="fas fa-user prefix grey-text"></i>
-            <input type="text" id="lname" class="form-control validate">
+            <input type="text" id="lname" name="lname" class="form-control validate">
             <label data-error="wrong" data-success="right" for="lname">Last name</label>
             </div>
 
             <div class="md-form mb-4">
             <i class="fas fa-address-card prefix grey-text"></i>
-            <input type="text" id="studid" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="studid">Student ID</label>
+            <input type="text" id="index" name = "index" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="index">Student ID</label>
             </div>
 
             <div class="md-form mb-4">
             <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="email" id="studemail" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="studemail">Email</label>
+            <input type="email" id="email" name = "email" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="email">Email</label>
             </div>
 
             <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
-            <input type="password" id="studpassword" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="studpassword">Password</label>
+            <input type="password" id="password" name="pword" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="password">Password</label>
             </div>
 
         </div>
             <div class="modal-footer d-flex justify-content-center">
-                <button type= "submit" class="btn btn-rounded" 
+                <button type= "submit" name ="signup_page" class="btn btn-rounded" 
                 style="width:100%; background-color:#12355B; color:#ffffff;">Sign Up</button>
             </div>
         </div>
     </div>
 </div>
-
+</form>
 <!--Main Layout-->
 <main>
     <div class="container">
