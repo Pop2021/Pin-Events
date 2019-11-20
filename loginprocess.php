@@ -1,7 +1,11 @@
 <?php
 
+require('user.php');
+
 //Initializing the session
 session_start();
+
+//
 
     //declare variables for my database connection 
     $servername = "localhost";
@@ -19,24 +23,15 @@ session_start();
 	}else{
 		//echo "Connected to the database<br>";
 	}
-
-	//Sanitizing data input
-
-	function sanitizeData($input) {
-		$data = trim($input);
-		$data = stripslashes($data);
-		$data = htmlspecialchars($data);
-
-	}
-
-
-	//check which button has been clicked
+	
+	
+	//check which button has been clicked and then proceed to validate credentials
 	if (isset($_POST['login'])) {
 
         // get the submitted email and password  
                    
-            $email = sanitizeData($_POST['loginemail']);
-            $password = sanitizeData($_POST['loginpword']);
+        $email = sanitizeData($_POST['loginemail']);
+        $password = sanitizeData($_POST['loginpword']);
 	} 
 		// hash user password  
 		$password = md5($password);

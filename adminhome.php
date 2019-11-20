@@ -21,7 +21,6 @@ require('signupprocess.php');
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
     <!-- JQuery -->
-    <script type="text/javascript" src="myajaxproject.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
@@ -50,76 +49,11 @@ require('signupprocess.php');
 
         <!-- Navbar brand for logo -->
         <a class="navbar-brand" href="index.php">
-            <img src="logo.svg" alt="Logo">
+            <img src="logo-black.svg" alt="Logo">
         </a>
-
-        <!-- Collapse button for Navbar -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar"
-        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navBar">
-
-            <!-- Links to Nav Items-->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-
-                <!-- Dropdown for Events Nav-->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Events</a>
-                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbardrop">
-                            <a class="dropdown-item" href="#">ASC Events</a>
-                            <a class="dropdown-item" href="#">Information Sessions</a>
-                            <a class="dropdown-item" href="#">Student Businesses</a>
-                            <a class="dropdown-item" href="#">Student Clubs</a>
-                        </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="modal" data-target="#modalLogIn">Login</a>
-                </li>
-
-                <li>
-                    <button type= "submit" class="btn align-middle btn-white" style="width:110px; height:40px; color:#000000;" 
-                    data-toggle="modal" data-target="#modalSignUp">Sign Up</button>
-                </li>
-
-                <!--Search bar-->
-                <li><form class="form-inline">
-                    <div class="md-form my-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    </div>
-                </form></li>
-            </ul>
-            <!--Search bar-->
-            <form class="form-inline" action="ProjProcsearch.php" method="post" >
-            <form class="form-inline">
-                <div class="md-form my-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="sterm" id="shterm">
-                </div>
-            </form>
-        </div>
-        <!-- Collapsible content -->
     </nav>
     <!--Navbar-->
 
-
-    <!--Hero Section Content-->
-
-    <!--Background Image-->
-    <div class="bg view">
-        <div class="mask flex-center rgba-black-strong"></div>
 
     <!-- Mask & flexbox options-->
     <div class="mask rgba-gradient align-items-center">
@@ -130,68 +64,30 @@ require('signupprocess.php');
             <!--Grid column for Text-->
             <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
             <br><br><br><br><br>
-            <h1 class="h1-responsive wow fadeInLeft" data-wow-delay="0.3s" style="font-family: Quicksand">Never miss an event! </h1>
+            <h1 class="h1-responsive wow fadeInLeft" data-wow-delay="0.3s" style="font-family: Quicksand; color:#000000;">
+            Admin Home! </h1>
             <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
             <br>
-            <h5 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s" style="font-family: Quicksand">
-            We’re here to make your Ashesi experience worth every second. See what’s happening on campus and join in! </h6>
             </div>
-
-            <div class ="col-md-1"></div>
+        </div>
             
-            <!--Grid column for Form-->
-            <div class="col-md-6 col-xl-5 mb-4">
-            <br><br>
-
+        <div class="row mt-5">
             <!--Form-->
-            <div class="card wow fadeInRight" data-wow-delay="0.3s">
-                <div class="card-body">
-                <br>
-                <!--Body-->
-                <div class="md-form" style="padding-left:40px;">
-                    <i class="fas fa-envelope prefix white-text active"></i>
-                    <label class="active">DATE</label><br>
-                    <select class="custom-select" style="width:90%;">
-                    <option selected>Any date</option>
-                    <option value="1">Today</option>
-                    <option value="2">Tomorrow</option>
-                    <option value="3">This week</option>
-                    <option value="4">Next week</option>
-                    <option value="5">This month</option>
-                    <option value="6">Next month</option>
-                </select>
+                <div class="text-right">
+                    <button type= "submit" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">
+                    Add an event</button>
                 </div>
 
-                <div class="md-form" style="padding-left:40px;">
-                    <i class="fas fa-envelope prefix white-text active"></i>
-                    <label class="active">EVENT CATEGORY</label><br>
-                    <select class="custom-select" style="width:320px;">
-                    <option selected>Any type</option>
-                    <option value="1">ASC Events</option>
-                    <option value="2">Information session</option>
-                    <option value="3">Student businesses</option>
-                    <option value="4">Student clubs</option>
-                </select>
+                <div class="text-right">
+                    <button type= "submit" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">
+                    Update an event</button>
                 </div>
 
-                <div class="md-form" style="padding-left:40px;">
-                    <i class="fas fa-envelope prefix white-text active"></i>
-                    <label class="active">YEAR GROUP</label><br>
-                    <select class="custom-select" style="width:320px;">
-                    <option selected>Any year group</option>
-                    <option value="1">2020</option>
-                    <option value="2">2021</option>
-                    <option value="3">2022</option>
-                    <option value="4">2023</option>
-                </select>
-                </div>
-
-                <div class="text-right mt-4" style="padding-right:35px;">
-                    <button type= "submit" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Search</button>
-                </div>
+                <div class="text-right" style="padding-right:35px;">
+                    <button type= "submit" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">
+                    Delete an event</button>
                 </div>
             </div>
-            <!--/.Form-->
             </div>
             <!--Grid column-->
         </div>
