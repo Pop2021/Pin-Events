@@ -1,5 +1,7 @@
 <?php
 
+require('user.php');
+
 //Initializing the session
 session_start();
 
@@ -28,8 +30,8 @@ session_start();
 
         // get the submitted email and password  
                    
-            $email = sanitizeData($_POST['loginemail']);
-            $password = sanitizeData($_POST['loginpword']);
+        $email = sanitizeData($_POST['loginemail']);
+        $password = sanitizeData($_POST['loginpword']);
 	} 
 		// hash user password  
 		$password = md5($password);
