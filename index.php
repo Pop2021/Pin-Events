@@ -12,6 +12,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -101,7 +103,7 @@
         <div class="container">
         <!--Grid row-->
         <div class="row mt-5">
-            <!--Grid column-->
+            <!--Grid column for Text-->
             <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
             <br><br><br><br><br>
             <h1 class="h1-responsive wow fadeInLeft" data-wow-delay="0.3s" style="font-family: Quicksand">Never miss an event! </h1>
@@ -110,20 +112,22 @@
             <h5 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s" style="font-family: Quicksand" >We’re here to make your Ashesi experience worth every second. 
             See what’s happening on campus and join in! </h6>
             </div>
-      
-            <!--Grid column-->
+
+            <div class ="col-md-1"></div>
+            
+            <!--Grid column for Form-->
             <div class="col-md-6 col-xl-5 mb-4">
             <br><br>
 
             <!--Form-->
             <div class="card wow fadeInRight" data-wow-delay="0.3s">
                 <div class="card-body">
-            <br>
+                <br>
                 <!--Body-->
                 <div class="md-form" style="padding-left:40px;">
                     <i class="fas fa-envelope prefix white-text active"></i>
                     <label class="active">DATE</label><br>
-                    <select class="custom-select" style="width:320px;">
+                    <select class="custom-select" style="width:90%;">
                     <option selected>Any date</option>
                     <option value="1">Today</option>
                     <option value="2">Tomorrow</option>
@@ -227,9 +231,6 @@
     </div>
 </div>
 
-</header>
-
-<!-- Main navigation -->
 <!--Main Layout-->
 <main>
     <div class="container">
@@ -507,10 +508,110 @@
             </span> 
         </div><br><br>
   </div>
-
-
 </main>
 <!--Main Layout-->
 </body>
+
+<!-- Footer -->
+<footer class="page-footer font-small pt-4" style="background-color:#12355B">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+        <div class="col-md-1"></div>
+
+        <!-- Grid column -->
+        <div class="col-md-4 mt-md-0 mt-3">
+            <!-- Content -->
+            <h5 class="text-uppercase"><img src="logo.svg"></h5>
+            <p>Pin Events is here to make your campus experience a worthwhile one.</p>
+        </div>
+        <div class="col-md-1"></div>
+
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h6 class="text-uppercase">Use Pin Events</h6>
+
+            <ul class="list-unstyled">
+            <li>
+                <a href="index.php" style="color:#A9A9A9;">Home</a>
+            </li>
+            <li>
+                <a href="about.php" style="color:#A9A9A9;">About</a>
+            </li>
+            <li>
+                <a href="#" style="color:#A9A9A9;">Login</a>
+            </li>
+            <li>
+            <a href="#" style="color:#A9A9A9;">Sign Up</a>
+            </li>
+            </ul>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h6 class="text-uppercase">Find Events</h6>
+
+            <ul class="list-unstyled">
+            <li>
+                <a href="#" style="color:#A9A9A9;">ASC Event</a>
+            </li>
+            <li>
+                <a href="#" style="color:#A9A9A9;">Information Sessions</a>
+            </li>
+            <li>
+                <a href="#" style="color:#A9A9A9;">Student Businesses</a>
+            </li>
+            <li>
+            <a href="#" style="color:#A9A9A9;">Student Clubs</a>
+            </li>
+            </ul>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+      <div class="col-md-2 mb-md-0 mb-3">
+
+        <h6 class="text-uppercase">Contact Us</h6>
+        <!-- Facebook -->
+        <a class="fb-ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-3 mr-3 fa-1x"> </i>
+        </a>
+        <!-- Twitter -->
+        <a class="tw-ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-3 mr-3 fa-1x"> </i>
+        </a>
+        <!--Instagram-->
+        <a class="ins-ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-3 mr-3 fa-1x"> </i>
+        </a>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="about.php"> Pin Events</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </html>
