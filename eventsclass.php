@@ -42,7 +42,9 @@
     public function getEndTime(){
         return $this->EndTime;
     }
-
+    function ascEvents($newEvent){
+        
+    }
 
   }
 ?>

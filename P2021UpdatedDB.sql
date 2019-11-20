@@ -1,5 +1,5 @@
 /*Drop Schema if exists `p2021`;
-CREATE DATABASE `P2021`;*/
+CREATE DATABASE `P2021`;*/ 
 USE `P2021`;
 
 
