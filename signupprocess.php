@@ -3,12 +3,11 @@
  //Getting form data
  if (isset($_POST['signup_page'])){
 
-    //echo "works";
+    
     $firstName = $_POST['fname'];
     $lastName = $_POST['lname'];
     $index = $_POST['index'];
     $email = $_POST['email'];
-        //$yeargroup = $_POST['yGroup'];
     $password = $_POST['pword'];
 
 
@@ -44,6 +43,7 @@ if (isset($_POST['signup_page'])) {
     $username = $_POST['password'];
 
 // encrypt password before storing to database
+$password = md5($password);
 
 // create sql query to insert user into the database
 $sql = "INSERT INTO user (Username,Password) VALUES('$name','$password')";
@@ -65,6 +65,7 @@ if (mysqli_num_rows($result)) {
 // close database connection
 $connection->close();
 
+}
 }
 
 ?>
