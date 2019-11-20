@@ -1,5 +1,6 @@
 <?php
 session_start();
+require('signupprocess.php');
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +38,7 @@ session_start();
 
         <!-- Navbar brand for logo -->
         <a class="navbar-brand" href="index.php">
-            <img src="logo 2.svg" alt="Logo">
+            <img src="logo.svg" alt="Logo">
         </a>
 
         <!-- Collapse button for Navbar -->
@@ -184,7 +185,7 @@ session_start();
     <!-- Full Page Intro -->
 
     <!--Sign up modal form-->
-    <form action = "signupprocess.php" method = "post">
+    <form action = "#" method = "post">
     <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -201,6 +202,9 @@ session_start();
             <i class="fas fa-user prefix grey-text"></i>
             <input type="text" id="fname" name="fname" class="form-control validate">
             <label data-error="wrong" data-success="right" for="fname">First name</label>
+            <span class="error" style="color: red"> 
+                <?php echo $fnameError;?>
+            </span>
             </div>
 
             <div class="md-form mb-5">
@@ -211,8 +215,8 @@ session_start();
 
             <div class="md-form mb-4">
             <i class="fas fa-address-card prefix grey-text"></i>
-            <input type="number" id="index" name = "index" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="index">Student ID</label>
+            <input type="number" id="studID" name = "studID" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="studID">Student ID</label>
             </div>
 
             <div class="md-form mb-4">
