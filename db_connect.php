@@ -4,7 +4,7 @@
 
 
 //database credentials
-require('db_cred.php');
+require('connectiondb.php');
 
 class db_connection
 {
