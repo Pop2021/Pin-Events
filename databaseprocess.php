@@ -73,5 +73,5 @@ session_start();
 		// close database connection
 		$connection->close();
 
-	}
+	
 ?>
