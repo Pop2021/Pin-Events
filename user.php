@@ -1,8 +1,13 @@
 <?php
+//connect to DB class
+
+
+
 
 /** 
  * User Class which creates User objects
  */
+
 
  class User extends pdbConnection{
 
@@ -102,13 +107,16 @@
 
     /**
      * User Methods: Sign Up
+     * when signup function is called, user details should get
+     *stored in the database
      */
 
     
-    public function signUp(){
-        //when signup function is called, user details should get
-        //stored in the database
+    public function addNewUser(){
 
+        //save into database
+        $sql = "INSERT INTO User('StudentsID','Firstname', `Lastname`, `Email`,`Password`)VALUES(?,?,?,?,?)";
+        
     }
 
     /**

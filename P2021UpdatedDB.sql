@@ -8,7 +8,6 @@ CREATE TABLE `P2021`.`User` (
   `StudentsID` INT NOT NULL,
   `Firstname` VARCHAR(45) NULL,
   `Lastname` VARCHAR(45) NULL,
-  `YearGroup` INT(5) NULL,
   `Email` VARCHAR(50) NULL,
   `Password` VARCHAR(50) NULL,
   PRIMARY KEY (`StudentsID`),

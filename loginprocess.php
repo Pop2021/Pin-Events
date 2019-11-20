@@ -1,5 +1,8 @@
 <?php
 
+//Initializing the session
+session_start();
+
     //declare variables for my database connection 
     $servername = "localhost";
     $username = "root";
