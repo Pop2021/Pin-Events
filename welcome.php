@@ -1,16 +1,7 @@
 
 <?php
 
- //Getting form data
-if (isset($_POST['signup_page'])){
 
-    //echo "works";
-    $firstName = $_POST['fName'];
-    $lastName = $_POST['lName'];
-    $email = $_POST['email'];
-    $index = $_POST['index'];
-    //$yeargroup = $_POST['yGroup'];
-    $password = $_POST['pword'];
 
     //echo " Welcome " .$firstName;
 
@@ -33,6 +24,13 @@ if (isset($_POST['signup_page'])){
             echo $lastName. " is invalid <br>";
         }
         
+         ///Validating Index
+         if(filter_var($index, FILTER_VALIDATE_INT)){
+            echo "Great! <br>";
+        }else{
+            echo $index. " is invalid <br>";
+        }
+        var_dump(filter_var($index, FILTER_SANITIZE_NUMBER_INT));
         // //Validating email
         // if (filter_has_var(INPUT_POST, 'email')){
         //     $email = $_POST['email'];
@@ -49,21 +47,7 @@ if (isset($_POST['signup_page'])){
         }
         //var_dump(filter_var($email, FILTER_SANITIZE_EMAIL));  
         
-         ///Validating Index
-        if(filter_var($index, FILTER_VALIDATE_INT)){
-            echo "Great! <br>";
-        }else{
-            echo $index. " is invalid <br>";
-        }
-        var_dump(filter_var($index, FILTER_SANITIZE_NUMBER_INT));
         
-        ///validating yeargroup
-        if(filter_var($yeargroup, FILTER_VALIDATE_INT)){
-            echo "Great! <br>";
-        }else{
-            echo $yeargroup. " is invalid <br>";
-        }
-        var_dump(filter_var($yeargroup, FILTER_SANITIZE_NUMBER_INT));
         
         //validating password
         if (filter_var($password, FILTER_SANITIZE_STRING)){

@@ -74,7 +74,7 @@ session_start();
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" data-toggle="modal" data-target="#modalLogIn">Login</a>
                 </li>
 
                 <li>
@@ -184,7 +184,7 @@ session_start();
     <!-- Full Page Intro -->
 
     <!--Sign up modal form-->
-    <form action = "welcome.php" method = "post">
+    <form action = "signupprocess.php" method = "post">
     <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -211,7 +211,7 @@ session_start();
 
             <div class="md-form mb-4">
             <i class="fas fa-address-card prefix grey-text"></i>
-            <input type="text" id="index" name = "index" class="form-control validate">
+            <input type="number" id="index" name = "index" class="form-control validate">
             <label data-error="wrong" data-success="right" for="index">Student ID</label>
             </div>
 
@@ -236,6 +236,45 @@ session_start();
     </div>
 </div>
 </form>
+
+<!--Log in modal form-->
+<form action = "loginprocess.php" method = "post">
+    <div class="modal fade" id="modalLogIn" tabindex="-1" role="dialog" aria-labelledby="studLogin"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Log in</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <form action = "databaseprocess.php" method = "post">
+        <div class="modal-body mx-3">
+            <div class="md-form mb-4">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input type="email" id="loginemail" name = "loginemail" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="email">Email</label>
+            </div>
+
+            <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <input type="password" id="loginpword" name="loginpword" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="password">Password</label>
+            </div>
+
+        </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type= "submit" name ="login" class="btn btn-rounded" 
+                style="width:100%; background-color:#12355B; color:#ffffff;">Log In</button>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+
+
 <!--Main Layout-->
 <main>
     <div class="container">
