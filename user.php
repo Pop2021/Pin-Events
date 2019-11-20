@@ -120,14 +120,62 @@
     }
 
     /**
+	 * This function sanitizes the input entered by the user:
+	 * Email, Password
+	 */
+
+	function sanitizeData($input) {
+		$data = trim($input);
+		$data = stripslashes($data);
+		$data = htmlspecialchars($data);
+
+	}
+
+
+    /**
      * Log In Method
      */
 
-    public function logIn(){
+
+    public function logIn($email, $password){
         //when logIn is called, user details should be compared with what
         //appears in the existing database
+        
+
+            // get the submitted email and password  
+                       
+            $email = sanitizeData($email);
+            $password = sanitizeData($password);
+        
+            // hash user password  
+            $password = md5($password);
+          
+            //check if user (email) is in the database
+            $sql = "SELECT * FROM user WHERE email='".$email."' && password='".$password."'";
+            
+            //run the query and store result
+            $result = mysqli_query($connection, $sql);
+            
+            //check if user does not exist
+            if (mysqli_num_rows($result) == 0) {
+                //display error message
+                echo "<script> alert('Sorry. User not found. Please try again');
+                window.location.href='index.php';</script>";
+                
+            }
+            else {
+                // fetch user email and password if user exists
+                $result = mysqli_fetch_assoc($result);
+                
+                // set retrieved user information in a session variable to be used across multiple pages
+                $_SESSION["user_info"] = "result";
+    
+                // redirect user to their dashboard as they have successfully logged in
+                header("Location: index.php");
+                
     }
- }
+ 
+}
 
 ?>
 
