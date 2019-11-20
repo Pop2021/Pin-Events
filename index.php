@@ -32,7 +32,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" style="position: absolute;">
 
         <!-- Navbar brand for logo -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.php">
             <img src="logo 2.svg" alt="Logo">
         </a>
 
@@ -109,8 +109,8 @@
             <h1 class="h1-responsive wow fadeInLeft" data-wow-delay="0.3s" style="font-family: Quicksand">Never miss an event! </h1>
             <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
             <br>
-            <h5 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s" style="font-family: Quicksand" >We’re here to make your Ashesi experience worth every second. 
-            See what’s happening on campus and join in! </h6>
+            <h5 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s" style="font-family: Quicksand">
+            We’re here to make your Ashesi experience worth every second. See what’s happening on campus and join in! </h6>
             </div>
 
             <div class ="col-md-1"></div>
@@ -199,19 +199,19 @@
             </div>
 
             <div class="md-form mb-5">
-            <i class="fas fa-envelope prefix grey-text"></i>
+            <i class="fas fa-user prefix grey-text"></i>
             <input type="text" id="lname" class="form-control validate">
             <label data-error="wrong" data-success="right" for="lname">Last name</label>
             </div>
 
             <div class="md-form mb-4">
-            <i class="fas fa-lock prefix grey-text"></i>
+            <i class="fas fa-address-card prefix grey-text"></i>
             <input type="text" id="studid" class="form-control validate">
             <label data-error="wrong" data-success="right" for="studid">Student ID</label>
             </div>
 
             <div class="md-form mb-4">
-            <i class="fas fa-lock prefix grey-text"></i>
+            <i class="fas fa-envelope prefix grey-text"></i>
             <input type="email" id="studemail" class="form-control validate">
             <label data-error="wrong" data-success="right" for="studemail">Email</label>
             </div>
@@ -225,7 +225,7 @@
         </div>
             <div class="modal-footer d-flex justify-content-center">
                 <button type= "submit" class="btn btn-rounded" 
-                style="width:100px; background-color:#12355B; color:#ffffff;">Sign Up</button>
+                style="width:100%; background-color:#12355B; color:#ffffff;">Sign Up</button>
             </div>
         </div>
     </div>
@@ -239,8 +239,8 @@
     <div class="row py-5 marg">
         
         <!--Grid column-->
-        <div class="col-md-12">
-        <h3>Upcoming Events</h3>
+        <div class="col-md-11">
+        <h3><b>Upcoming Events</b></h3>
         </div><br>
         <!--Grid column-->
 
@@ -252,7 +252,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -268,7 +268,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -284,7 +284,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -293,8 +293,8 @@
         </div><br><br>
 
         <!--Grid column-->
-        <div class="col-md-12" style="padding-top:40px">
-        <h3>ASC Events</h3>
+        <div class="col-md-11" style="padding-top:40px">
+        <h3><b>ASC Events</b></h3>
         </div><br>
         <!--Grid column-->
 
@@ -306,7 +306,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -322,7 +322,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -338,7 +338,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -347,8 +347,8 @@
         </div><br><br>
 
         <!--Grid column-->
-        <div class="col-md-12" style="padding-top:40px">
-        <h3>Information Sessions</h3>
+        <div class="col-md-11" style="padding-top:40px">
+        <h3><b>Information Sessions</b></h3>
         </div><br>
         <!--Grid column-->
 
@@ -360,7 +360,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -376,7 +376,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -392,7 +392,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -401,8 +401,8 @@
         </div><br><br>
 
         <!--Grid column-->
-        <div class="col-md-12" style="padding-top:40px">
-        <h3>Student Businesses</h3>
+        <div class="col-md-11" style="padding-top:40px">
+        <h3><b>Student Businesses</b></h3>
         </div><br>
         <!--Grid column-->
 
@@ -414,7 +414,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -430,7 +430,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -446,7 +446,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -455,8 +455,8 @@
         </div><br><br>
 
         <!--Grid column-->
-        <div class="col-md-12" style="padding-top:40px">
-        <h3>Student Clubs</h3>
+        <div class="col-md-11" style="padding-top:40px">
+        <h3><b>Student Clubs</b></h3>
         </div><br>
         <!--Grid column-->
 
@@ -468,7 +468,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -484,7 +484,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
@@ -500,7 +500,7 @@
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h4 class="card-title"><a>Milky Mountain</a></h4>
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
