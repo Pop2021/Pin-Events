@@ -21,6 +21,7 @@ require('signupprocess.php');
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
     <!-- JQuery -->
+    <script type="text/javascript" src="myajaxproject.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
@@ -85,9 +86,10 @@ require('signupprocess.php');
             </ul>
 
             <!--Search bar-->
+            <form class="form-inline" action="ProjProcsearch.php" method="post" >
             <form class="form-inline">
                 <div class="md-form my-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="sterm" id="shterm">
                 </div>
             </form>
         </div>
