@@ -4,7 +4,7 @@
  * User Class which creates User objects
  */
 
- class User{
+ class User extends pdbConnection{
 
     public $firstName = " ";
     public $lastName = " ";
@@ -101,17 +101,19 @@
     }
 
     /**
-     * User Methods: Sign Up, Log in
+     * User Methods: Sign Up
      */
 
-    /**
-     * Sign Up Method
-     */
-
+    
     public function signUp(){
         //when signup function is called, user details should get
         //stored in the database
+
     }
+
+    /**
+     * Log In Method
+     */
 
     public function logIn(){
         //when logIn is called, user details should be compared with what

@@ -12,7 +12,26 @@ class pdbConnection{
 
 	//properties
 	public $dbase = null;
-	public $results = null;
+	public $result = null;
+
+    /**
+     * Constructor
+     */
+    public function __construct($dbase, $result){
+        $this->dbase = $dbase;
+        $this->result = $result;
+        echo __CLASS__." created<br>";
+
+    }
+
+
+     /**
+     * Deconstructor
+     */
+
+    public function __deconstruct(){
+        echo __CLASS__." destroyed<br>";
+    }
 
 	//connection
 	/** 
@@ -50,8 +69,8 @@ class pdbConnection{
 		}
 
 		//running a query 
-		$this->results = mysqli_query($this->dbase,$sql);
-		if ($this->results == false) {
+		$this->result = mysqli_query($this->dbase,$sql);
+		if ($this->result == false) {
 			return false;
         }
         else{
@@ -68,14 +87,14 @@ class pdbConnection{
 	*/
 	function pdbFetchRecord(){
 		//check if result was set
-		if ($this->results == null) {
+		if ($this->result == null) {
 			return false;
 		}
-		elseif ($this->results == false) {
+		elseif ($this->result == false) {
 			return false;
 		}
 		//return a record
-		return mysqli_fetch_assoc($this->results);
+		return mysqli_fetch_assoc($this->result);
 
 	}
 }
