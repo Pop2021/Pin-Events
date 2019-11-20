@@ -175,15 +175,8 @@ require('pdbclass.php');
 
                 header("Location: index.php");
                 exit();
-                
+              
     }
-
-
+ } }
 
 ?>
-
-<!-- <
-    $user1 = new User("Afua", "Cudjoe", "ac@gmail.com", 9999, 2019, "fish123");
-    $user1->setEmail("afua.mkb@gmail.com");
-    echo $user1->getEmail();
-?> -->
