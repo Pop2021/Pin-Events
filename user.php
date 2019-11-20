@@ -106,16 +106,17 @@
     }
 
     /**
-     * User Methods: Sign Up
+     * User Methods: addNewUser, logIn
      * when signup function is called, user details should get
      *stored in the database
      */
 
     
-    public function addNewUser(){
-
+    public function addNewUser($firstName, $lastName, $email, $studentID, $password){
+        
         //save into database
-        $sql = "INSERT INTO User('StudentsID','Firstname', `Lastname`, `Email`,`Password`)VALUES(?,?,?,?,?)";
+        $sql = "INSERT INTO User('StudentsID','Firstname', `Lastname`, `Email`,`Password`)VALUES($studentID, $firstName, $lastName, $email, $password)";
+        header('Location: index.php');
         
     }
 
