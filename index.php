@@ -197,7 +197,7 @@ require('session.php');
     <!-- Full Page Intro -->
 
     <!--Sign up modal form-->
-    <form action = "user-index.php" method = "post">
+    <form action = "signupprocess.php" method = "post">
     <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -214,7 +214,6 @@ require('session.php');
             <i class="fas fa-user prefix grey-text"></i>
             <label data-error="Please check your input" data-success="right" for="fname">First name</label>
             <input type="text" id="fname" name="fname" class="form-control">
-            <h6><span class="error"> <?php echo $fnameError;?></span></h6>
             </div>
 
             <div class="md-form mb-5">
@@ -225,8 +224,8 @@ require('session.php');
 
             <div class="md-form mb-4">
             <i class="fas fa-address-card prefix grey-text"></i>
-            <input type="number" id="studID" name = "studID" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="studID">Student ID</label>
+            <input type="number" id="studid" name = "studid" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="studid">Student ID</label>
             </div>
 
             <div class="md-form mb-4">
@@ -237,13 +236,13 @@ require('session.php');
 
             <div class="md-form mb-4">
             <i class="fas fa-lock prefix grey-text"></i>
-            <input type="password" id="password" name="pword" class="form-control validate">
+            <input type="password" id="password" name="password" class="form-control validate">
             <label data-error="wrong" data-success="right" for="password">Password</label>
             </div>
 
         </div>
             <div class="modal-footer d-flex justify-content-center">
-                <button type= "submit" name ="signup_page" class="btn btn-rounded" 
+                <button type= "submit" name ="signup" class="btn btn-rounded" 
                 style="width:100%; background-color:#12355B; color:#ffffff;">Sign Up</button>
             </div>
         </div>
@@ -252,7 +251,7 @@ require('session.php');
 </form>
 
 <!--Log in modal form-->
-<form action = "/view/loginprocess.php" method = "post">
+<form action = "view/loginprocess.php" method = "post">
     <div class="modal fade" id="modalLogIn" tabindex="-1" role="dialog" aria-labelledby="studLogin"
     aria-hidden="true">
     <div class="modal-dialog" role="document">

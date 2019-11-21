@@ -1,7 +1,7 @@
 <?php
 //connect to DB class
 
-require('pdbclass.php');
+include_once('../settings/pdbclass.php');
 
 
 /** 
@@ -15,21 +15,22 @@ require('pdbclass.php');
     public $lastName = " ";
     public $email = " ";
     public $studentID = null;
-    //public $yearGroup = null;
     public $password = "";
 
     
     /**
      * Constructor
      */
-    public function __construct($firstName, $lastName, $email, $studentID, $yearGroup, $password){
+    function __construct($firstName, $lastName, $email, $studentID, $password){
+        parent::__construct();
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->email = $email;
         $this->studentID = $studentID;
-        //$this->yearGroup = $yearGroup;
         $this->password = $password;
-        echo __CLASS__." created<br>";
+        $this->connect();
+        
+        //echo __CLASS__." created<br>";
 
     }
 
@@ -112,12 +113,16 @@ require('pdbclass.php');
      */
 
     
-    public function addNewUser($firstName, $lastName, $email, $studentID, $password){
+    public function addNewUser(){
         
         //save into database
-        $sql = "INSERT INTO User('StudentsID','Firstname', `Lastname`, `Email`,`Password`)VALUES($studentID, $firstName, $lastName, $email, $password)";
-        header('Location: index.php');
-        
+        $sql = "INSERT INTO user ('StudentsID','Firstname', `Lastname`, `Email`,`Password`) 
+        VALUES($this->studentID, $this->firstName, $this->lastName, $this->email, $this->password)";
+
+        $result = mysqli_query($this->connection, $sql);
+        echo $result;
+        //header('Location: ../view/user-index.php');
+        exit();
     }
 
     /**
@@ -136,47 +141,39 @@ require('pdbclass.php');
     /**
      * Log In Method
      */
+ 
+    function usercheck() {
+     
+        $sql = "SELECT * FROM user WHERE email='".$this->email."' && password='".$this->password."'";
+		
+	
+        //run the query and store result
+        $result = mysqli_query($this->connection, $sql);
+		
+		//check if user does not exist
+		if (mysqli_num_rows($result) == 0) {
+			
+			echo "<script> alert('Sorry. User not found. Please try again');
+			window.location.href='../index.php';</script>";
+		}
+		else {
+			// fetch user email and password if user exists
+			$result = mysqli_fetch_assoc($result);
+			
+			// set retrieved user information in a session variable to be used across multiple pages
+			$_SESSION["user_info"] = $result;
+			$_SESSION["email"] = $result['Email'];
 
+	        // redirect user to their dashboard as they have successfully logged in
+	        header("Location: user-index.php");
+	    	
+		}
 
-    public function logIn($email, $password){
-        //when logIn is called, user details should be compared with what
-        //appears in the existing database
-        
+		// close database connection
+		
+		exit();
+ }
 
-            // get the submitted email and password  
-                       
-            $email = sanitizeData($email);
-            $password = sanitizeData($password);
-        
-            // hash user password  
-            $password = md5($password);
-          
-            //check if user (email) is in the database
-            $sql = "SELECT * FROM user WHERE email='".$email."' && password='".$password."'";
-            
-            //run the query and store result
-            $result = mysqli_query($connection, $sql);
-            
-            //check if user does not exist
-            if (mysqli_num_rows($result) == 0) {
-                //display error message
-                echo "<script> alert('Sorry. User not found. Please try again');
-                window.location.href='index.php';</script>";
-                
-            }
-            else {
-                // fetch user email and password if user exists
-                $result = mysqli_fetch_assoc($result);
-                
-                // set retrieved user information in a session variable to be used across multiple pages
-                $_SESSION["user_info"] = "result";
-    
-                // redirect user to their dashboard as they have successfully logged in
-
-                header("Location: index.php");
-                exit();
-              
-    }
- } }
+}
 
 ?>
