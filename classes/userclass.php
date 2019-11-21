@@ -113,10 +113,10 @@ include_once('../settings/pdbclass.php');
      */
 
     
-    public function addNewUser(){
+    function addNewUser(){
         
         //save into database
-        $sql = "INSERT INTO user ('StudentsID','Firstname', `Lastname`, `Email`,`Password`) 
+        $sql = "INSERT INTO user (`StudentsID`,`Firstname`, `Lastname`, `Email`,`Password`) 
         VALUES($this->studentID, $this->firstName, $this->lastName, $this->email, $this->password)";
 
         $result = mysqli_query($this->connection, $sql);

@@ -24,7 +24,7 @@ function sanitizeData($data) {
 		$password = md5($password);
 	  
 		//check if user (email) is in the database
-		$user = new user (null, null, $email, null, null, $password);
+		$user = new User (null, null, $email, null, null, $password);
 		$user->usercheck();
 
 
