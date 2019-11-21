@@ -9,7 +9,7 @@ require('session.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     
     <!-- Font Quicksand -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
@@ -50,7 +50,7 @@ require('session.php');
 
         <!-- Navbar brand for logo -->
         <a class="navbar-brand" href="index.php">
-            <img src="logo.svg" alt="Logo">
+            <img src="images/logo.svg" alt="Logo">
         </a>
 
         <!-- Collapse button for Navbar -->
@@ -305,7 +305,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/afro-girl.jpg" alt="Event image">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -321,7 +321,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -337,7 +337,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/afro-girl.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -359,7 +359,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -375,7 +375,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/afro-girl.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -391,7 +391,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -413,7 +413,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -429,7 +429,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/afro-girl.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -445,7 +445,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -467,7 +467,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -483,7 +483,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/afro-girl.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -499,7 +499,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -521,7 +521,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -537,7 +537,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/afro-girl.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -553,7 +553,7 @@ require('session.php');
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -583,7 +583,7 @@ require('session.php');
         <!-- Grid column -->
         <div class="col-md-4 mt-md-0 mt-3">
             <!-- Content -->
-            <h5 class="text-uppercase"><img src="logo.svg"></h5>
+            <h5 class="text-uppercase"><img src="images/logo.svg"></h5>
             <p>Pin Events is here to make your campus experience a worthwhile one.</p>
         </div>
         <div class="col-md-1"></div>
