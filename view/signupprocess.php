@@ -1,6 +1,6 @@
 <?php
 
-require_once('classes/userclass.php');
+require_once('../classes/userclass.php');
 
 // Initialize variables to null.
 $fnameError ="";

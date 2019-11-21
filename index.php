@@ -197,7 +197,7 @@ require('session.php');
     <!-- Full Page Intro -->
 
     <!--Sign up modal form-->
-    <form action = "signupprocess.php" method = "post">
+    <form action = "./view/signupprocess.php" method = "post">
     <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
