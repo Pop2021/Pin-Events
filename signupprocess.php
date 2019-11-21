@@ -30,7 +30,7 @@ if (isset($_POST['signup'])) {
 	$password = md5($password);
 
 	//check if user (email) is in the database
-	$user = new user ($fname, $lname, $email, $studid, $password);
+	$user = new User ($fname, $lname, $email, $studid, $password);
 	$user->addNewUser();
 }
 		

@@ -144,7 +144,7 @@ include_once('../settings/pdbclass.php');
  
     function usercheck() {
      
-        $sql = "SELECT * FROM user WHERE email='".$this->email."' && password='".$this->password."'";
+        $sql = "SELECT * FROM User WHERE Email='".$this->email."' && Password='".$this->password."'";
 		
 	
         //run the query and store result
@@ -165,7 +165,7 @@ include_once('../settings/pdbclass.php');
 			$_SESSION["email"] = $result['Email'];
 
 	        // redirect user to their dashboard as they have successfully logged in
-	        header("Location: user-index.php");
+	        header("Location: view/user-index.php");
 	    	
 		}
 
