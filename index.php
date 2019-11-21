@@ -252,7 +252,7 @@ require('session.php');
 </form>
 
 <!--Log in modal form-->
-<form action = "loginprocess.php" method = "post">
+<form action = "/view/loginprocess.php" method = "post">
     <div class="modal fade" id="modalLogIn" tabindex="-1" role="dialog" aria-labelledby="studLogin"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
