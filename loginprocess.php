@@ -1,11 +1,12 @@
 <?php
 
 require('user.php');
+require('pdbclass.php');
 
 //Initializing the session
 session_start();
 
-//
+
 // declaring an instance
 //$user1 = new User('Irene', 'Klein', 'test@gmail.com', '99998888', 'testry@@@');
     //declare variables for my database connection 
@@ -54,10 +55,11 @@ session_start();
 			$result = mysqli_fetch_assoc($result);
 			
 			// set retrieved user information in a session variable to be used across multiple pages
-			$_SESSION["user_info"] = "result";
+			$_SESSION["user_info"] = $result;
+			$_SESSION["email"] = $result['Email'];
 
 	        // redirect user to their dashboard as they have successfully logged in
-	        header("Location: index.php");
+	        header("Location: user-index.php");
 	    	
 		}
 

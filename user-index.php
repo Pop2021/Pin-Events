@@ -1,6 +1,5 @@
 <?php
-require('session.php');
-//require('signupprocess.php');
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -21,25 +20,13 @@ require('session.php');
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
     <!-- JQuery -->
-    <script type="text/javascript" src="myajaxproject.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script> -->
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
-    
-    <!-- <script src = "bootstrap-validate.js"></script>
-    <script>
-        bootstrapValidate('#fname', 'regex: /^[A-Z][A-Za-z\ \-]{1,100}$/g: Please check your first name')
-        bootstrapValidate('#lname', 'regex: /^[A-Z][A-Za-z\ \-]{1,100}$/g: Please check your last name')
-        bootstrapValidate('#studID', 'regex: //(\d{7,8})/g: Please check your student ID')
-        bootstrapValidate('#email', 'regex: /^([a-z]+[\.-]*[a-z]+)+(@ashesi\.edu\.gh)$/ig: Please check your email')
-        bootstrapValidate('#password', 'regex: /[A-Za-z0-9\W]+/g: Please check your input')
-        bootstrapValidate('#loginemail', 'regex: /^([a-z]+[\.-]*[a-z]+)+(@ashesi\.edu\.gh)$/ig: Please check your email')
-        bootstrapValidate('#loginpword', 'regex: /[A-Za-z0-9\W]+/g: Please check your password')
-    </script> -->
 
     <title>Home</title>
 </head>
@@ -86,13 +73,17 @@ require('session.php');
                         </div>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="modal" data-target="#modalLogIn">Login</a>
-                </li>
-
-                <li>
-                    <button type= "submit" class="btn align-middle btn-white" style="width:110px; height:40px; color:#000000;" 
-                    data-toggle="modal" data-target="#modalSignUp">Sign Up</button>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="avatarDrop" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0"
+                        alt="avatar image" height="35">
+                    </a>
+                    
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="avatarDrop">
+                        <a class="dropdown-item" href="editprofile">Edit Profile</a>
+                        <a class="dropdown-item" href="index.php">Logout</a>
+                    </div>
                 </li>
 
                 <!--Search bar-->
@@ -101,6 +92,8 @@ require('session.php');
                         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                     </div>
                 </form></li>
+
+
             </ul>
         </div>
         <!-- Collapsible content -->
@@ -197,7 +190,7 @@ require('session.php');
     <!-- Full Page Intro -->
 
     <!--Sign up modal form-->
-    <form action = "user-index.php" method = "post">
+    <form action = "signupprocess.php" method = "post">
     <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -214,7 +207,6 @@ require('session.php');
             <i class="fas fa-user prefix grey-text"></i>
             <label data-error="Please check your input" data-success="right" for="fname">First name</label>
             <input type="text" id="fname" name="fname" class="form-control">
-            <h6><span class="error"> <?php echo $fnameError;?></span></h6>
             </div>
 
             <div class="md-form mb-5">
@@ -570,7 +562,7 @@ require('session.php');
 </body>
 
 <!-- Footer -->
-<footer class="page-footer font-small pt-4" style="background-color:#12355B">
+<footer class="page-footer font-small pt-4" style="background-color:#12355B;">
 
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">

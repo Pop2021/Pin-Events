@@ -1,8 +1,8 @@
-<svg id="logo" data-name="logo" xmlns="http://www.w3.org/2000/svg" width="83.53" height="25" viewBox="0 0 83.53 25">
+<svg id="logo_2" data-name="logo 2" xmlns="http://www.w3.org/2000/svg" width="83.53" height="25" viewBox="0 0 83.53 25">
   <defs>
     <style>
       .cls-1, .cls-2 {
-        fill: #fff;
+        fill: #000;
       }
 
       .cls-2 {

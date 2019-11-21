@@ -1,22 +1,6 @@
 <?php
 
-//declare variables for my database connection 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "P2021";
-
-
-//connection 
-$connection = mysqli_connect($servername,$username,$password,$database);
-
-// Check connection
-if (!$connection) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-else{
-    //echo "Connected to the database<br>";
-}
+require('pdbclass.php');
 
 // Initialize variables to null.
 $fnameError ="";
@@ -25,17 +9,12 @@ $idError ="";
 $emailError ="";
 $passwordError ="";
 
-    
-// //Getting form data
-// if (isset($_POST['signup_page'])){
-  
-//     $firstName = sanitizeData($_POST['fname']);
-//     $lastName = sanitizeData($_POST['lname']);
-//     $studID = sanitizeData($_POST['studID']);
-//     $email = sanitizeData($_POST['email']);
-//     $password = sanitizeData($_POST['pword']);
-// }
-    
+//Sanitizing data input
+function sanitizeData($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+}
 
 //Getting and validating form data
 if(isset($_POST['signup_page'])){
@@ -47,7 +26,7 @@ if(isset($_POST['signup_page'])){
         $fname = sanitizeData($_POST["fname"]);
         
         //check first name only contains letters and whitespace
-		if (!preg_match("/^[a-zA-Z ]*$/", $fname)) {
+		if (!preg_match("/^([0-9 A-Z a-z]+[\.-]*[a-z 0-9 \-]+)$/", $fname)) {
 			$fnameError = " * Only letters and white space allowed"; 
 		}
     }
@@ -98,13 +77,6 @@ if(isset($_POST['signup_page'])){
 		if (!preg_match_all("/[A-Za-z0-9\W]+/g/",$password)) {
 			$password = " *  Please check your password"; 
 		}
-    }
-    
-    //Sanitizing data input
-    function sanitizeData($data) {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
     }
 }
 

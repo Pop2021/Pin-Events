@@ -4,10 +4,7 @@
 //database credentials
 require('pdbcredentials.php');
 
-/**
- *@author Afua Boateng
- *@version 1.1
- */
+
 class pdbConnection{
 
 	//properties
