@@ -7,7 +7,7 @@
 
 
 	//connection 
-	$connection = mysqli_connect(SERVERNAME,USERNAME,PASSWORD,DATABASE);
+	$connection = new mysqli(SERVERNAME,USERNAME,PASSWORD,DATABASE);
 
 	// Check connection
 	if (!$connection) {

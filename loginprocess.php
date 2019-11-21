@@ -1,30 +1,11 @@
 <?php
 
 require('user.php');
+require('pdbclass.php');
 
 //Initializing the session
 session_start();
 
-//
-
-    //declare variables for my database connection 
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "P2021";
-	
-
-	//connection 
-	$connection = mysqli_connect($servername,$username,$password,$database);
-
-	// Check connection
-	if (!$connection) {
-		die("Connection failed: " . mysqli_connect_error());
-	}else{
-		//echo "Connected to the database<br>";
-	}
-	
-	
 	//check which button has been clicked and then proceed to validate credentials
 	if (isset($_POST['login'])) {
 

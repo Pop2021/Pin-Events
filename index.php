@@ -1,6 +1,6 @@
 <?php
 require('session.php');
-require('signupprocess.php');
+//require('signupprocess.php');
 ?>
 
 <!DOCTYPE html>
@@ -102,13 +102,6 @@ require('signupprocess.php');
                     </div>
                 </form></li>
             </ul>
-            <!--Search bar-->
-            <form class="form-inline" action="ProjProcsearch.php" method="post" >
-            <form class="form-inline">
-                <div class="md-form my-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="sterm" id="shterm">
-                </div>
-            </form>
         </div>
         <!-- Collapsible content -->
     </nav>
@@ -577,7 +570,7 @@ require('signupprocess.php');
 </body>
 
 <!-- Footer -->
-<footer class="page-footer font-small pt-4" style="background-color:#12355B; width: 100%; position:fixed; bottom: 0;">
+<footer class="page-footer font-small pt-4" style="background-color:#12355B">
 
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">

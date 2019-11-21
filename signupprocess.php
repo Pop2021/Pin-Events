@@ -1,22 +1,6 @@
 <?php
 
-//declare variables for my database connection 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "P2021";
-
-
-//connection 
-$connection = mysqli_connect($servername,$username,$password,$database);
-
-// Check connection
-if (!$connection) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-else{
-    //echo "Connected to the database<br>";
-}
+require('pdbclass.php');
 
 // Initialize variables to null.
 $fnameError ="";

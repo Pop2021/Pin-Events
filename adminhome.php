@@ -1,6 +1,6 @@
 <?php
 require('session.php');
-require('signupprocess.php');
+//require('signupprocess.php');
 ?>
 
 <!DOCTYPE html>

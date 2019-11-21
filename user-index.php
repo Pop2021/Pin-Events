@@ -562,7 +562,7 @@ session_start();
 </body>
 
 <!-- Footer -->
-<footer class="page-footer font-small pt-4" style="background-color:#12355B; width: 100%; position:fixed; bottom: 0;">
+<footer class="page-footer font-small pt-4" style="background-color:#12355B;">
 
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">
