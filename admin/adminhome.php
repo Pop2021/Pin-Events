@@ -61,7 +61,7 @@ require('../session.php');
         <div class="mask flex-center rgba-black-strong"></div>
 
     <!-- Mask & flexbox options-->
-    <div class="mask rgba-gradient align-items-center">
+    <div class="mask rgba-gradient align-items-`center">
         <!-- Content -->
         <div class="container">
         <!--Grid row-->
@@ -77,9 +77,9 @@ require('../session.php');
 
             <a class="btn" style="background-color:#12355B; color:#ffffff;" role="button" href="adminhome.php">Add Event</a>
 
-            <a class="btn" style="background-color:#ffffff; color:#12355B;" role="button" href="updateevent.php">Update Event</a>
+            <a class="btn" style="background-color:#ffffff; color:#12355B;" role="button" href="adminupdate.php">Update Event</a>
 
-            <a class="btn" style="background-color:#ffffff; color:#12355B;" role="button" href="deleteevent.php">Delete Event</a>            
+            <a class="btn" style="background-color:#ffffff; color:#12355B;" role="button" href="admindelete.php">Delete Event</a>            
             </div>
 
             <div class ="col-md-1"></div>

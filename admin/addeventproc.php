@@ -27,8 +27,8 @@ if (isset($_POST['addevent'])) {
 	$event = new Event ($eventName, $eventVenue, $eventDate, $startTime, $endTime, $eventDesc);
 	$event->addEvent();
 
-	// header('Location: adminhome.php');
-	// exit();
+	header('Location: adminhome.php');
+	exit();
 }
 
 ?>

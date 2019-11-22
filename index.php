@@ -299,10 +299,25 @@ require('session.php');
         </div><br>
         <!--Grid column-->
 
-        <!-- Card 1-->
-        <div class="col-md-4">
-            <?php
+         <!-- Card 1-->
+         <div class="col-md-4">
+            <span class="container-fluid profiles">
+                <div class="card pro3" style="width:100%">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
+            <!-- Card content -->
+                    <div class="card-body">
+                        <h5 class="card-title"><a>Milky Mountain</a></h5>
+                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
+                    </div>
+                </div>
+            </span> 
+        </div><br><br>
+
+        <!-- Card 1-->
+        <!-- <div class="col-md-4">
+            <
             require_once('classes/eventsclass.php');
             $event = new Event(null, null, null, null, null, null);
             $result = $event->getAllEvents();
@@ -318,9 +333,9 @@ require('session.php');
                     <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                 </div>';
                 }
-            }
+            } -->
 
-            ?>
+            <!-- ?> -->
             <!-- <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
                     <img class="card-img-top" src="images/afro-girl.jpg" alt="Event image"> -->
@@ -332,9 +347,9 @@ require('session.php');
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div> -->
-                </div>
+                <!-- </div>
             </span> 
-        </div><br><br>
+        </div><br><br> -->
 
         <!-- Card 2-->
         <div class="col-md-4">
