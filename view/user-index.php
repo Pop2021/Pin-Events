@@ -317,25 +317,9 @@ session_start();
                     <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
-                    <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
-                        <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
-                    </div>
-                </div>
-            </span> 
-        </div><br><br>
-
-        <!-- Card 2-->
-        <div class="col-md-4">
-            <span class="container-fluid profiles">
-                <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="../images/afro-girl.jpg" alt="Card image cap">
-
-            <!-- Card content -->
-                    <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+            <div class="card-body">
+                        <h5 class="card-title"><a>Bank of America Merrill Lynch</a></h5>
+                        <p class="card-text">Spring Internship</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -346,12 +330,12 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Goldman Sachs</a></h5>
+                        <p class="card-text">Summer Internship</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -368,12 +352,12 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Goldman Sachs</a></h5>
+                        <p class="card-text">Spring Internship</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -384,12 +368,12 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="../images/afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/afro-girl.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Google</a></h5>
+                        <p class="card-text">EMEA Internships</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -400,12 +384,12 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Google</a></h5>
+                        <p class="card-text">STEP for 2nd Years</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -422,12 +406,12 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Code for Change</a></h5>
+                        <p class="card-text">Learn to code in fun and interactive ways!</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -438,12 +422,12 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="../images/afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/afro-girl.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Tech Era</a></h5>
+                        <p class="card-text">Come with us to give underserved communitites access to tech!</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -454,12 +438,12 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Ashesi Startup Launchpad</a></h5>
+                        <p class="card-text">Join us and we will show you how to take your idea from just a concept to a fully-fledged business</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -467,6 +451,7 @@ session_start();
         </div><br><br>
   </div>
 </main>
+
 <!--Main Layout-->
 </body>
 
