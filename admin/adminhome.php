@@ -1,6 +1,5 @@
 <?php
 require('../session.php');
-//require('signupprocess.php');
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +8,7 @@ require('../session.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="../css/admin.css" type="text/css">
     
     <!-- Font Quicksand -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
@@ -28,17 +27,6 @@ require('../session.php');
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
-    
-    <!-- <script src = "bootstrap-validate.js"></script>
-    <script>
-        bootstrapValidate('#fname', 'regex: /^[A-Z][A-Za-z\ \-]{1,100}$/g: Please check your first name')
-        bootstrapValidate('#lname', 'regex: /^[A-Z][A-Za-z\ \-]{1,100}$/g: Please check your last name')
-        bootstrapValidate('#studID', 'regex: //(\d{7,8})/g: Please check your student ID')
-        bootstrapValidate('#email', 'regex: /^([a-z]+[\.-]*[a-z]+)+(@ashesi\.edu\.gh)$/ig: Please check your email')
-        bootstrapValidate('#password', 'regex: /[A-Za-z0-9\W]+/g: Please check your input')
-        bootstrapValidate('#loginemail', 'regex: /^([a-z]+[\.-]*[a-z]+)+(@ashesi\.edu\.gh)$/ig: Please check your email')
-        bootstrapValidate('#loginpword', 'regex: /[A-Za-z0-9\W]+/g: Please check your password')
-    </script> -->
 
     <title>Home</title>
 </head>
@@ -49,11 +37,28 @@ require('../session.php');
 
         <!-- Navbar brand for logo -->
         <a class="navbar-brand" href="index.php">
-            <img src="logo-black.svg" alt="Logo">
+            <img src="../images/logo.svg" alt="Logo">
         </a>
+
+        <!-- Links to Nav Items-->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="../index.php">Logout</a>
+            </li>
+        </ul>
     </nav>
     <!--Navbar-->
 
+
+    <!--Background Image-->
+    <div class="bg view">
+        <div class="mask flex-center rgba-black-strong"></div>
 
     <!-- Mask & flexbox options-->
     <div class="mask rgba-gradient align-items-center">
@@ -62,135 +67,89 @@ require('../session.php');
         <!--Grid row-->
         <div class="row mt-5">
             <!--Grid column for Text-->
-            <div class="col-md-6 mb-5 mt-md-0 mt-5">
-            <h1 class="h1-responsive wow fadeInLeft" data-wow-delay="0.3s" style="font-family: Quicksand; color:#000000;">
-            Admin Home! </h1>
+            <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left">
+            <br><br><br><br><br>
+            <h1 class="h1-responsive wow fadeInLeft" data-wow-delay="0.3s" style="font-family: Quicksand">PinEvents Admin</h1>
             <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
             <br>
+            <h5 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s" style="font-family: Quicksand">
+            This page is for organizers to add, update and/or delete events</h6>
+
+            <a class="btn" style="background-color:#12355B; color:#ffffff;" role="button" href="adminhome.php">Add Event</a>
+
+            <a class="btn" style="background-color:#ffffff; color:#12355B;" role="button" href="updateevent.php">Update Event</a>
+
+            <a class="btn" style="background-color:#ffffff; color:#12355B;" role="button" href="deleteevent.php">Delete Event</a>            
+            </div>
+
+            <div class ="col-md-1"></div>
+            
+            <!--Grid column for Form-->
+            <div class="col-md-6 col-xl-5 mb-4">
+            <br><br>
+
+            <!-- Material form login -->
+            <div class="card">
+
+                <h5 class="card-header" style="color: #12355B;">
+                    <strong>Add an Event</strong>
+                </h5>
+
+                <!--Card content-->
+                <div class="card-body px-lg-5 pt-0">
+
+                    <!-- Form -->
+                    <form class="text-center" action="addeventproc.php">
+
+                        <!-- Event Name -->
+                        <div class="md-form">
+                        <input type="text" id="eventname" class="form-control">
+                        <label for="eventname">Event Name</label>
+                        </div>
+
+                        <!-- Venue -->
+                        <div class="md-form py-1">
+                        <input type="text" id="eventvenue" class="form-control">
+                        <label for="eventvenue">Venue</label>
+                        </div>
+
+                        <!-- Date -->
+                        <div class="md-form py-1">
+                        <input type="date" id="eventdate" class="form-control">
+                        <label for="eventname">Date</label>
+                        </div>
+
+                        <!-- Start Time -->
+                        <div class="md-form py-1">
+                        <input type="time" id="eventstart" class="form-control">
+                        <label for="eventname">Start time</label>
+                        </div>
+
+                        <!-- End Time -->
+                        <div class="md-form py-1">
+                        <input type="time" id="eventend" class="form-control">
+                        <label for="eventname">End time</label>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="md-form">
+                        <input type="text" id="eventdesc" class="form-control">
+                        <label for="eventdesc">Description</label>
+                        </div>
+
+                        <!-- Sign in button -->
+                        <button type= "submit" name ="addevent" class="btn btn-rounded" style="width:100%; 
+                        background-color:#12355B; color:#ffffff;" data-toggle="modal" data-target="#modalAdd">Add</button>
+
+                        <!-- Central Modal Medium Success -->
+                    </form>
+                    <!-- Form -->
+                </div>
+            </div>
             </div>
         </div>
-            
-        <div class="row mt-5">
-            <!--Form-->
-                <div class="text-right">
-                    <button type= "submit" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">
-                    Add an event</button>
-                </div>
-
-                <div class="text-right">
-                    <button type= "submit" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">
-                    Update an event</button>
-                </div>
-
-                <div class="text-right" style="padding-right:35px;">
-                    <button type= "submit" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">
-                    Delete an event</button>
-                </div>
         </div>
     </div>
-        
 </body>
-
-<!-- Footer -->
-<footer class="page-footer font-small pt-4" style="background-color:#12355B; width: 100%; position:fixed; bottom: 0;">
-
-  <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left">
-
-    <!-- Grid row -->
-    <div class="row">
-
-        <div class="col-md-1"></div>
-
-        <!-- Grid column -->
-        <div class="col-md-4 mt-md-0 mt-3">
-            <!-- Content -->
-            <h5 class="text-uppercase"><img src="logo.svg"></h5>
-            <p>Pin Events is here to make your campus experience a worthwhile one.</p>
-        </div>
-        <div class="col-md-1"></div>
-
-        <!-- Grid column -->
-        <hr class="clearfix w-100 d-md-none pb-3">
-
-        <!-- Grid column -->
-        <div class="col-md-2 mb-md-0 mb-3">
-
-            <!-- Links -->
-            <h6 class="text-uppercase">Use Pin Events</h6>
-
-            <ul class="list-unstyled">
-            <li>
-                <a href="index.php" style="color:#A9A9A9;">Home</a>
-            </li>
-            <li>
-                <a href="about.php" style="color:#A9A9A9;">About</a>
-            </li>
-            <li>
-                <a href="#" style="color:#A9A9A9;">Login</a>
-            </li>
-            <li>
-            <a href="#" style="color:#A9A9A9;">Sign Up</a>
-            </li>
-            </ul>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 mb-md-0 mb-3">
-
-            <!-- Links -->
-            <h6 class="text-uppercase">Find Events</h6>
-
-            <ul class="list-unstyled">
-            <li>
-                <a href="#" style="color:#A9A9A9;">ASC Event</a>
-            </li>
-            <li>
-                <a href="#" style="color:#A9A9A9;">Information Sessions</a>
-            </li>
-            <li>
-                <a href="#" style="color:#A9A9A9;">Student Businesses</a>
-            </li>
-            <li>
-            <a href="#" style="color:#A9A9A9;">Student Clubs</a>
-            </li>
-            </ul>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-      <div class="col-md-2 mb-md-0 mb-3">
-
-        <h6 class="text-uppercase">Contact Us</h6>
-        <!-- Facebook -->
-        <a class="fb-ic">
-            <i class="fab fa-facebook-f fa-lg white-text mr-md-3 mr-3 fa-1x"> </i>
-        </a>
-        <!-- Twitter -->
-        <a class="tw-ic">
-            <i class="fab fa-twitter fa-lg white-text mr-md-3 mr-3 fa-1x"> </i>
-        </a>
-        <!--Instagram-->
-        <a class="ins-ic">
-            <i class="fab fa-instagram fa-lg white-text mr-md-3 mr-3 fa-1x"> </i>
-        </a>
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2019 Copyright:
-    <a href="about.php"> Pin Events</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
 
 </html>

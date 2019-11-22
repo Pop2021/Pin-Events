@@ -10,17 +10,19 @@ $emailError ="";
 $passwordError ="";
 
 //Sanitizing data input
-function sanitizeData($data) {
-    $data = trim($data);
+function sanitizeData($input) {
+    $data = trim($input);
     $data = stripslashes($data);
-    $data = htmlspecialchars($data);
+	$data = htmlspecialchars($data);
+	
+	return $data;
 }
 
 //check which button has been clicked and then proceed to validate credentials
 if (isset($_POST['signup'])) {
 
 	// get the submitted email and password
-	$fname = sanitizeData($_POST['fname']);
+	$fname = $_POST['fname'];
 	$lname = sanitizeData($_POST['lname']);
 	$studid = sanitizeData($_POST['studid']);	   
 	$email = sanitizeData($_POST['email']);
@@ -29,9 +31,12 @@ if (isset($_POST['signup'])) {
 	// hash user password  
 	$password = md5($password);
 
-	//check if user (email) is in the database
+	//add user to the database
 	$user = new User ($fname, $lname, $email, $studid, $password);
 	$user->addNewUser();
+
+	header('Location: user-index.php');
+	exit();
 }
 		
 	// //check if first name is valid

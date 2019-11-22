@@ -8,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
     
     <!-- Font Quicksand -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@ session_start();
 
         <!-- Navbar brand for logo -->
         <a class="navbar-brand" href="index.php">
-            <img src="logo.svg" alt="Logo">
+            <img src="../images/logo.svg" alt="Logo">
         </a>
 
         <!-- Collapse button for Navbar -->
@@ -52,7 +52,7 @@ session_start();
             <!-- Links to Nav Items-->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
+                    <a class="nav-link" href="user-index.php">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -189,97 +189,6 @@ session_start();
     </div>
     <!-- Full Page Intro -->
 
-    <!--Sign up modal form-->
-    <form action = "signupprocess.php" method = "post">
-    <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-        <div class="modal-header text-center">
-            <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-
-        <div class="modal-body mx-3">
-            <div class="md-form mb-5">
-            <i class="fas fa-user prefix grey-text"></i>
-            <label data-error="Please check your input" data-success="right" for="fname">First name</label>
-            <input type="text" id="fname" name="fname" class="form-control">
-            </div>
-
-            <div class="md-form mb-5">
-            <i class="fas fa-user prefix grey-text"></i>
-            <input type="text" id="lname" name="lname" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="lname">Last name</label>
-            </div>
-
-            <div class="md-form mb-4">
-            <i class="fas fa-address-card prefix grey-text"></i>
-            <input type="number" id="studID" name = "studID" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="studID">Student ID</label>
-            </div>
-
-            <div class="md-form mb-4">
-            <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="email" id="email" name = "email" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="email">Email</label>
-            </div>
-
-            <div class="md-form mb-4">
-            <i class="fas fa-lock prefix grey-text"></i>
-            <input type="password" id="password" name="pword" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="password">Password</label>
-            </div>
-
-        </div>
-            <div class="modal-footer d-flex justify-content-center">
-                <button type= "submit" name ="signup_page" class="btn btn-rounded" 
-                style="width:100%; background-color:#12355B; color:#ffffff;">Sign Up</button>
-            </div>
-        </div>
-    </div>
-</div>
-</form>
-
-<!--Log in modal form-->
-<form action = "loginprocess.php" method = "post">
-    <div class="modal fade" id="modalLogIn" tabindex="-1" role="dialog" aria-labelledby="studLogin"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-        <div class="modal-header text-center">
-            <h4 class="modal-title w-100 font-weight-bold">Log in</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-
-        <div class="modal-body mx-3">
-            <div class="md-form mb-4">
-            <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="email" id="loginemail" name = "loginemail" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="email">Email</label>
-            </div>
-
-            <div class="md-form mb-4">
-            <i class="fas fa-lock prefix grey-text"></i>
-            <input type="password" id="loginpword" name="loginpword" class="form-control validate">
-            <label data-error="wrong" data-success="right" for="password">Password</label>
-            </div>
-
-        </div>
-            <div class="modal-footer d-flex justify-content-center">
-                <button type= "submit" name ="login" class="btn btn-rounded" 
-                style="width:100%; background-color:#12355B; color:#ffffff;">Log In</button>
-            </div>
-        </div>
-    </div>
-</div>
-</form>
-
-
 <!--Main Layout-->
 <main>
     <div class="container">
@@ -297,7 +206,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/afro-girl.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -313,7 +222,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -329,7 +238,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/afro-girl.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -351,7 +260,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -367,7 +276,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/afro-girl.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -383,7 +292,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -405,7 +314,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -421,7 +330,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/afro-girl.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -437,7 +346,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -459,7 +368,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -475,7 +384,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/afro-girl.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -491,7 +400,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -513,7 +422,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -529,7 +438,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="afro-girl.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/afro-girl.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -545,7 +454,7 @@ session_start();
         <div class="col-md-4">
             <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="active-adult.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="../images/active-adult.jpg" alt="Card image cap">
 
             <!-- Card content -->
                     <div class="card-body">
@@ -575,7 +484,7 @@ session_start();
         <!-- Grid column -->
         <div class="col-md-4 mt-md-0 mt-3">
             <!-- Content -->
-            <h5 class="text-uppercase"><img src="logo.svg"></h5>
+            <h5 class="text-uppercase"><img src="../images/logo.svg"></h5>
             <p>Pin Events is here to make your campus experience a worthwhile one.</p>
         </div>
         <div class="col-md-1"></div>
@@ -591,7 +500,7 @@ session_start();
 
             <ul class="list-unstyled">
             <li>
-                <a href="index.php" style="color:#A9A9A9;">Home</a>
+                <a href="user-index.php" style="color:#A9A9A9;">Home</a>
             </li>
             <li>
                 <a href="about.php" style="color:#A9A9A9;">About</a>

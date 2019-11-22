@@ -116,13 +116,19 @@ include_once('../settings/pdbclass.php');
     function addNewUser(){
         
         //save into database
-        $sql = "INSERT INTO user (`StudentsID`,`Firstname`, `Lastname`, `Email`,`Password`) 
-        VALUES($this->studentID, $this->firstName, $this->lastName, $this->email, $this->password)";
+        $sql = "INSERT INTO User (StudentsID, Firstname, Lastname, Email, Password) VALUES(?, ?, ?, ?, ?)";
 
-        $result = mysqli_query($this->connection, $sql);
-        echo $result;
+        $statement = mysqli_prepare($this->connection, $sql);
+
+        $statement->bind_param("sssss", $this->studentID, $this->firstName, $this->lastName, $this->email, $this->password);
+
+        $result = $statement->execute();
+
+        $statement->close();
+
+        //echo $result;
         //header('Location: ../view/user-index.php');
-        exit();
+        return $result;
     }
 
     /**

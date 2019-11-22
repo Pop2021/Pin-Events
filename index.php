@@ -1,6 +1,5 @@
 <?php
 require('session.php');
-//require('signupprocess.php');
 ?>
 
 <!DOCTYPE html>
@@ -197,7 +196,7 @@ require('session.php');
     <!-- Full Page Intro -->
 
     <!--Sign up modal form-->
-    <form action = "./view/signupprocess.php" method = "post">
+    <form action = "view/signupprocess.php" method = "post">
     <div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -309,6 +308,7 @@ require('session.php');
             <!-- Card content -->
                     <div class="card-body">
                         <h5 class="card-title"><a>Milky Mountain</a></h5>
+                        <p class="card-text">28/11/2019</p>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>

@@ -9,6 +9,6 @@
 	define('SERVERNAME', 'localhost');
     define('USERNAME', 'root');
 	define('PASSWORD', '');
-	define('DATABASE', 'p2021');
+	define('DATABASE', 'P2021');
 
 ?>
