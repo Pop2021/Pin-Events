@@ -1,6 +1,6 @@
 <?php
-//connect to DB class
 
+//connect to DB class
 include_once('../settings/pdbclass.php');
 
 
@@ -29,8 +29,7 @@ include_once('../settings/pdbclass.php');
         $this->studentID = $studentID;
         $this->password = $password;
         $this->connect();
-        
-        //echo __CLASS__." created<br>";
+    
 
     }
 
@@ -69,10 +68,6 @@ include_once('../settings/pdbclass.php');
         return $this->studentID;
     }
 
-    // public function getYearGroup(){
-    //     return $this->yearGroup;
-    // }
-
     public function getPassword(){
         return $this->password;
     }
@@ -97,10 +92,6 @@ include_once('../settings/pdbclass.php');
     public function setID($studentID){
         $this->studentID = $studentID;
     }
-
-    // public function setYearGroup($yearGroup){
-    //     $this->yearGroup = $yearGroup;
-    // }
 
     public function setPassword($password){
         $this->password = $password;

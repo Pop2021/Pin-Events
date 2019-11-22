@@ -99,51 +99,63 @@ require('../session.php');
                 <div class="card-body px-lg-5 pt-0">
 
                     <!-- Form -->
-                    <form class="text-center" action="addeventproc.php">
+                    <form class="text-center" action="addeventproc.php" method="POST">
 
                         <!-- Event Name -->
                         <div class="md-form">
-                        <input type="text" id="eventname" class="form-control">
+                        <input type="text" id="eventname" name="eventName" class="form-control">
                         <label for="eventname">Event Name</label>
                         </div>
 
                         <!-- Venue -->
                         <div class="md-form py-1">
-                        <input type="text" id="eventvenue" class="form-control">
+                        <input type="text" id="eventvenue" name="eventVenue" class="form-control">
                         <label for="eventvenue">Venue</label>
                         </div>
 
                         <!-- Date -->
                         <div class="md-form py-1">
-                        <input type="date" id="eventdate" class="form-control">
+                        <input type="date" id="eventdate" name="eventDate" class="form-control">
                         <label for="eventname">Date</label>
                         </div>
 
                         <!-- Start Time -->
                         <div class="md-form py-1">
-                        <input type="time" id="eventstart" class="form-control">
+                        <input type="time" id="eventstart" name="startTime" class="form-control">
                         <label for="eventname">Start time</label>
                         </div>
 
                         <!-- End Time -->
                         <div class="md-form py-1">
-                        <input type="time" id="eventend" class="form-control">
+                        <input type="time" id="eventend" name="endTime" class="form-control">
                         <label for="eventname">End time</label>
                         </div>
 
                         <!-- Description -->
                         <div class="md-form">
-                        <input type="text" id="eventdesc" class="form-control">
+                        <input type="text" id="eventdesc" name="eventDesc" class="form-control">
                         <label for="eventdesc">Description</label>
                         </div>
 
-                        <!-- Sign in button -->
+                        <!-- Add event button -->
                         <button type= "submit" name ="addevent" class="btn btn-rounded" style="width:100%; 
                         background-color:#12355B; color:#ffffff;" data-toggle="modal" data-target="#modalAdd">Add</button>
-
-                        <!-- Central Modal Medium Success -->
                     </form>
                     <!-- Form -->
+
+                    <!--Sign up modal form-->
+                    <div class="modal fade" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title w-100 font-weight-bold">Event added</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
             </div>

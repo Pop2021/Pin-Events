@@ -301,17 +301,37 @@ require('session.php');
 
         <!-- Card 1-->
         <div class="col-md-4">
-            <span class="container-fluid profiles">
+            <?php
+
+            require_once('classes/eventsclass.php');
+            $event = new Event(null, null, null, null, null, null);
+            $result = $event->getAllEvents();
+
+            if($result->num_rows > 0){
+                while ($row = $result->fetch_assoc()){
+                    echo '<div class="card pro3" style="width:100%"> 
+                    <img class="card-img-top" src="images/afro-girl.jpg" alt="Event image"> 
+                    <div class="card-body">
+                    <h5 class="card-title"><a>'.$row["eventName"].'</a></h5>
+                    <p class="card-text">'.$row["Date"].'</p>
+                    <p class="card-text">'.$row["Description"].'</p>
+                    <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
+                </div>';
+                }
+            }
+
+            ?>
+            <!-- <span class="container-fluid profiles">
                 <div class="card pro3" style="width:100%">
-                    <img class="card-img-top" src="images/afro-girl.jpg" alt="Event image">
+                    <img class="card-img-top" src="images/afro-girl.jpg" alt="Event image"> -->
 
             <!-- Card content -->
-                    <div class="card-body">
+                    <!-- <div class="card-body">
                         <h5 class="card-title"><a>Milky Mountain</a></h5>
                         <p class="card-text">28/11/2019</p>
                         <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
-                    </div>
+                    </div> -->
                 </div>
             </span> 
         </div><br><br>
@@ -362,8 +382,8 @@ require('session.php');
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Rolling Smoke</a></h5>
+                        <p class="card-text">Party! party! party!</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -378,8 +398,8 @@ require('session.php');
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>International Engagement Day</a></h5>
+                        <p class="card-text">Come and rep your country!</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -394,8 +414,8 @@ require('session.php');
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Outreach Day</a></h5>
+                        <p class="card-text">Join us to engage with the Berekuso community</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -416,8 +436,8 @@ require('session.php');
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Bank of America Merrill Lynch</a></h5>
+                        <p class="card-text">Summer Internship info-session</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -432,8 +452,8 @@ require('session.php');
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Bank of America Merrill Lynch</a></h5>
+                        <p class="card-text">Spring Internship</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -448,8 +468,8 @@ require('session.php');
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Goldman Sachs</a></h5>
+                        <p class="card-text">Summer Internship</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -470,8 +490,8 @@ require('session.php');
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Goldman Sachs</a></h5>
+                        <p class="card-text">Spring Internship</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -486,8 +506,8 @@ require('session.php');
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Google</a></h5>
+                        <p class="card-text">EMEA Internships</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -502,8 +522,8 @@ require('session.php');
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Google</a></h5>
+                        <p class="card-text">STEP for 2nd Years</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -524,8 +544,8 @@ require('session.php');
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Code for Change</a></h5>
+                        <p class="card-text">Learn to code in fun and interactive ways!</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -540,8 +560,8 @@ require('session.php');
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Tech Era</a></h5>
+                        <p class="card-text">Come with us to give underserved communitites access to tech!</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
@@ -556,8 +576,8 @@ require('session.php');
 
             <!-- Card content -->
                     <div class="card-body">
-                        <h5 class="card-title"><a>Milky Mountain</a></h5>
-                        <p class="card-text">Pass by the student hangout to get your tasty milkshakes this Wednesday</p>
+                        <h5 class="card-title"><a>Ashesi Startup Launchpad</a></h5>
+                        <p class="card-text">Join us and we will show you how to take your idea from just a concept to a fully-fledged business</p>
                         <a href="#" class="btn btn-rounded" style="width:100px; background-color:#12355B; color:#ffffff;">Save</a>
                     </div>
                 </div>
